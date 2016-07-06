@@ -1,18 +1,19 @@
 ###
   Coded by: Andrew McBurney - July 6th.
 
-  A short JavaScript example showing fibonacci number
+  A short CoffeeScript example showing fibonacci number
   calculations.
 ###
 
-# Base case for first two numbers
-fib0 = fib1 = 1
-
-i = 0
-while i < 10
-  i++
-
 # Computes and returns fibonacci number
-fibonacci = (n1, n2) ->
-  n3 = n1 + n2
-  n3
+fibonacci = (n) ->
+  if n < 2
+    n
+  else
+    fibonacci(n - 1) + fibonacci(n - 2)
+
+# Iterate through and compute and print
+i = 1
+while i < 10
+  console.log fibonacci(i)
+  i++

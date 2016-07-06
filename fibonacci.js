@@ -5,16 +5,16 @@
   calculations.
 */
 
-// Base case for first two numbers
-var fib0 = fib1 = 1;
-
 // Iterate through and compute and print
-for (var i = 0; i < 10; i++) {
-  console.log("");
+for (var i = 1; i < 10; i++) {
+  console.log(fibonacci(i));
 }
 
 // Computes and returns fibonacci number
-function fibonacci (n1, n2) {
-  var n3 = n1 + n2;
-  return n3;
+function fibonacci (n) {
+  if (n < 2) {
+    return n;
+  } else {
+    return fibonacci(n-1) + fibonacci(n-2);
+  }
 }
