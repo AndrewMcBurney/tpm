@@ -5,8 +5,8 @@
   calculations.
 */
 
-// Iterate through and compute and print
-for (let i: number = 0; i < 10; i++) {
+// Iterate through, compute and print
+for (let i: number = 1; i < 10; i++) {
   console.log(fibonacci(i));
 }
 

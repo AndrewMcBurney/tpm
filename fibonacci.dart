@@ -15,7 +15,7 @@ int fibonacci (int n) {
 }
 
 main() {
-  // Iterate through and compute and print
+  // Iterate through, compute and print
   for (int i = 1; i < 10; i++) {
     print(fibonacci(i));
   }
