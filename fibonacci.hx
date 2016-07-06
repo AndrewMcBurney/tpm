@@ -6,7 +6,7 @@
 */
 
 class Fibonacci {
-	static function main () :Void {
+  static function main () :Void {
     // Computes and returns fibonacci number
     function fibonacci (n) :Int {
       if (n < 2) {
